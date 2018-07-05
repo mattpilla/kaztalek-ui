@@ -1,11 +1,16 @@
 <template>
     <div id="navbar">
-        <router-link to="/">
-            <span @mouseenter="logo = animatedLogo" @mouseleave="logo = staticLogo">
-                <img id="logo" :src="logo">
-                <span id="brand">&lt;kaztalek&gt;</span>
-            </span>
-        </router-link>
+        <div id="navbar-inner">
+            <router-link to="/">
+                <span @mouseenter="logo = animatedLogo" @mouseleave="logo = staticLogo">
+                    <img id="logo" :src="logo">
+                    <span id="brand">&lt;kaztalek&gt;</span>
+                </span>
+            </router-link>
+            <div class="nav-links">
+                <router-link to="/games">Games</router-link>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -27,14 +32,24 @@
 </script>
 
 <style scoped lang="scss">
-    @import "~@/styles/_variables.scss";
+    @import "~@/styles/variables";
 
     #navbar {
-        display: flex;
-        font-family: 'Roboto Mono', monospace;
         background-color: $nav;
         border-bottom: 1px solid $secondary;
+    }
+
+    #navbar-inner {
+        display: flex;
+        margin: auto;
+        position: relative;
+        font-family: 'Roboto Mono', monospace;
         padding: 16px;
+        max-width: $max-width;
+
+        .nav-links {
+            margin-left: auto;
+        }
     }
 
     #logo {

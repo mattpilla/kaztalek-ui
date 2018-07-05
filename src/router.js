@@ -8,8 +8,11 @@ export default new Router({
     routes: [
         {
             path: '/',
-            name: 'home',
             component: () => import('@/views/Home')
+        },
+        {
+            path: '/games',
+            component: () => import('@/views/Games')
         }
     ]
 });
