@@ -1,0 +1,30 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: $bg;
+    color: #fff;
+}
+
+h1 {
+    color: $secondary-light;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($link-color, 10%);
+        transition: 0.5s;
+    }
+}
+
+::selection {
+    background-color: $primary-light;
+    color: #fff;
+}
+
+.container {
+    padding: 16px;
+    max-width: $max-width;
+    margin: auto;
+}
