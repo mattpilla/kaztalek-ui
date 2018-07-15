@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    color: $secondary-light;
+    color: $primary;
 }
 
 a {
@@ -13,13 +13,13 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: darken($link-color, 10%);
+        color: darken($link-color, 15%);
         transition: 0.5s;
     }
 }
 
 ::selection {
-    background-color: $primary-light;
+    background-color: $primary;
     color: #fff;
 }
 

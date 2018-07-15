@@ -47,7 +47,7 @@
 
     #navbar {
         background-color: $nav;
-        border-bottom: 1px solid $secondary;
+        border-bottom: 1px solid $primary;
     }
 
     #navbar-inner {
