@@ -8,7 +8,18 @@
                 </span>
             </router-link>
             <div class="nav-links">
-                <router-link to="/games">Games</router-link>
+                <a href="https://twitter.com/kaztalek" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://youtube.com/kaztalek" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://twitch.tv/kaztalek" target="_blank">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a href="https://github.com/mattpilla" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -41,14 +52,27 @@
 
     #navbar-inner {
         display: flex;
+        align-items: center;
         margin: auto;
         position: relative;
         font-family: 'Roboto Mono', monospace;
-        padding: 16px;
+        padding: 0 16px;
+        height: 50px;
         max-width: $max-width;
 
         .nav-links {
             margin-left: auto;
+
+            i {
+                color: $text-light;
+                margin-left: 16px;
+                font-size: 24px;
+                transition: 0.5s;
+
+                &:hover {
+                    color: $secondary;
+                }
+            }
         }
     }
 
