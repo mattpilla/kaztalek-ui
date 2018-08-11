@@ -13,6 +13,14 @@ export default new Router({
         {
             path: '/games',
             component: () => import('@/views/Games')
+        },
+        {
+            path: '/games/dungeon',
+            name: 'dungeon'
+        },
+        {
+            path: '/games/cafde',
+            name: 'cafde'
         }
     ]
 });
