@@ -46,7 +46,7 @@
     @import "~@/styles/variables";
 
     #navbar {
-        background-color: $nav;
+        background-color: $bg-secondary;
         border-bottom: 1px solid $primary;
     }
 

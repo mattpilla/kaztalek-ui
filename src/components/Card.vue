@@ -20,7 +20,7 @@
     .card {
         display: flex;
         color: $text-light;
-        background-color: $nav;
+        background-color: $bg-secondary;
         padding: 8px;
         border-radius: 4px;
         border: 1px solid $primary;
