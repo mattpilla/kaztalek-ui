@@ -19,7 +19,8 @@ const router = new Router({
         {
             path: '/games/dungeon',
             name: 'dungeon',
-            meta: {title: 'Dungeon'}
+            meta: {title: 'Dungeon'},
+            component: () => import('@/views/Dungeon')
         },
         {
             path: '/games/cafde',

@@ -46,6 +46,8 @@
     @import "~@/styles/variables";
 
     #navbar {
+        position: relative;
+        z-index: 10;
         background-color: $bg-secondary;
         border-bottom: 1px solid $primary;
     }
