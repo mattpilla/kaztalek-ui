@@ -25,7 +25,7 @@
         }
     },
     "scripts": {
-        "build": "vue-cli-service build",
+        "build": "vue-cli-service build --modern",
         "serve": "vue-cli-service serve",
         "start": "npm run serve"
     },

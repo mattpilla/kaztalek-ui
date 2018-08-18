@@ -21,7 +21,6 @@
         min-height: 100px;
         background-position: right center;
         background-size: cover;
-        margin-bottom: 16px;
         position: relative;
         border-bottom: 1px solid $primary;
 
