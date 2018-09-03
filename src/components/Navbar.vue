@@ -1,25 +1,27 @@
 <template>
-    <div id="navbar">
-        <div id="navbar-inner">
-            <router-link to="/">
-                <span @mouseenter="logo = animatedLogo" @mouseleave="logo = staticLogo">
-                    <img id="logo" :src="logo">
-                    <span id="brand">&lt;kaztalek&gt;</span>
-                </span>
-            </router-link>
-            <div class="nav-links">
-                <a href="https://twitter.com/kaztalek" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://youtube.com/kaztalek" target="_blank">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://twitch.tv/kaztalek" target="_blank">
-                    <i class="fab fa-twitch"></i>
-                </a>
-                <a href="https://github.com/mattpilla" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
+    <div id="navbar-wrapper">
+        <div id="navbar">
+            <div id="navbar-inner">
+                <router-link to="/">
+                    <span @mouseenter="logo = animatedLogo" @mouseleave="logo = staticLogo">
+                        <img id="logo" :src="logo">
+                        <span id="brand">&lt;kaztalek&gt;</span>
+                    </span>
+                </router-link>
+                <div class="nav-links">
+                    <a href="https://twitter.com/kaztalek" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://youtube.com/kaztalek" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitch.tv/kaztalek" target="_blank">
+                        <i class="fab fa-twitch"></i>
+                    </a>
+                    <a href="https://github.com/mattpilla" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -45,8 +47,15 @@
 <style scoped lang="scss">
     @import "~@/styles/variables";
 
+    #navbar-wrapper {
+        height: $nav-height;
+    }
+
     #navbar {
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
         z-index: 10;
         background-color: $bg-secondary;
         border-bottom: 1px solid $primary;

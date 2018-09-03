@@ -44,17 +44,3 @@
         }
     }
 </script>
-
-<style scoped lang="scss">
-    .games-container {
-        display: flex;
-        flex-wrap: wrap;
-
-        > a {
-            flex-grow: 1;
-            min-width: 200px;
-            max-width: 400px;
-            margin: 0 16px 16px 0;
-        }
-    }
-</style>
