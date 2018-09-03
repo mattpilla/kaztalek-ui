@@ -17,22 +17,28 @@
                 <p>Move around with the arrow keys, interact with objects with the <strong>Z</strong> key, use the stick with <strong>X</strong>, and use the magnet with <strong>C</strong>.</p>
                 <p>This Zelda-inspired project was made in a month, and finished in December 2012. The game is short; a first playthrough may take around 20 to 30 minutes.</p>
             </div>
-            <div class="requirements">
-                <h2>Requirements</h2>
-                <table>
-                    <tr>
-                        <td>OS:</td>
-                        <td>Windows</td>
-                    </tr>
-                    <tr>
-                        <td>Dependencies:</td>
-                        <td>Java</td>
-                    </tr>
-                    <tr>
-                        <td>Space:</td>
-                        <td>6MB</td>
-                    </tr>
-                </table>
+            <div class="game-extras">
+                <div class="requirements">
+                    <h2>Requirements</h2>
+                    <table>
+                        <tr>
+                            <td>OS:</td>
+                            <td>Windows</td>
+                        </tr>
+                        <tr>
+                            <td>Dependencies:</td>
+                            <td>Java</td>
+                        </tr>
+                        <tr>
+                            <td>Space:</td>
+                            <td>6MB</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h2>Screenshots</h2>
+                    <image-gallery :images="images"></image-gallery>
+                </div>
             </div>
         </div>
     </div>
@@ -40,14 +46,21 @@
 
 <script>
     import Banner from '@/components/Banner';
+    import ImageGallery from '@/components/ImageGallery';
 
     export default {
         components: {
-            Banner
+            Banner,
+            ImageGallery
         },
         data() {
             return {
-                api: process.env.VUE_APP_API_URL
+                api: process.env.VUE_APP_API_URL,
+                images: [
+                    require('@/assets/games/dungeon/screen2.png'),
+                    require('@/assets/games/dungeon/screen3.png'),
+                    require('@/assets/games/dungeon/screen4.png')
+                ]
             }
         }
     }

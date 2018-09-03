@@ -30,7 +30,17 @@
     }
 }
 
-.requirements td:first-child {
-    padding-right: 8px;
-    color: $text-light-gray;
+.game-extras {
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+}
+
+.requirements {
+    margin-right: 32px;
+
+    td:first-child {
+        padding-right: 8px;
+        color: $text-light-gray;
+    }
 }
