@@ -18,6 +18,18 @@ a {
     }
 }
 
+.btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 8px;
+}
+
+.btn-primary {
+    background-color: $primary-dark;
+    color: #fff;
+}
+
 ::selection {
     background-color: $primary;
     color: #fff;

@@ -5,10 +5,12 @@
             :background="require('@/assets/games/dungeon/screen1.png')">
         </banner>
         <div class="container">
-            <router-link to="/games"><i class="fas fa-arrow-left"></i>&nbsp;Games</router-link>
-            <a :href="`${api}/files/games/Dungeon1.2.7z`">
-                <button class="btn">Download</button>
-            </a>
+            <div class="d-flex">
+                <router-link to="/games"><i class="fas fa-arrow-left"></i>&nbsp;Games</router-link>
+                <a :href="`${api}/files/games/Dungeon1.2.7z`" class="ml-auto">
+                    <button class="btn btn-primary">Download</button>
+                </a>
+            </div>
         </div>
     </div>
 </template>
