@@ -25,10 +25,10 @@
         border-bottom: 1px solid $primary;
 
         > h1 {
+            @include text-shadow;
             position: absolute;
             line-height: 1;
             color: $primary;
-            text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000;
             bottom: 0;
             width: 100%;
             max-width: $max-width;

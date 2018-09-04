@@ -15,3 +15,9 @@ $link-color: $secondary;
 // Sizes
 $max-width: 1090px;
 $nav-height: 51px;
+
+
+// Mixins
+@mixin text-shadow() {
+    text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000;
+}

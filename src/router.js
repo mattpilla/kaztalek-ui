@@ -6,6 +6,12 @@ Vue.use(Router);
 const router = new Router({
     mode: 'history',
     routes: [
+        /* 404 */
+        {
+            path: '*',
+            component: () => import('@/views/NotFound')
+        },
+        /* Misc routes */
         {
             path: '/',
             component: () => import('@/views/Home')
