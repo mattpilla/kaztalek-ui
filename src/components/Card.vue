@@ -27,8 +27,8 @@
 
         .thumbnail {
             $thumbnail-size: 120px;
-            max-width: $thumbnail-size;
-            max-height: $thumbnail-size;
+            width: $thumbnail-size;
+            height: $thumbnail-size;
             border-radius: 2px;
             margin-right: 16px;
         }
