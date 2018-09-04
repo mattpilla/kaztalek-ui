@@ -5,7 +5,7 @@
             :background="require('@/assets/games/dungeon/screen1.png')">
         </banner>
         <div class="container">
-            <div class="d-flex">
+            <div class="d-flex align-items-center">
                 <router-link to="/games"><i class="fas fa-arrow-left"></i>&nbsp;Games</router-link>
                 <a :href="`${api}/files/games/Dungeon1.2.7z`" class="ml-auto">
                     <button class="btn btn-primary">Download</button>
