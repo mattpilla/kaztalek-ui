@@ -2,6 +2,7 @@
     <div id="navbar-wrapper">
         <div id="navbar">
             <div id="navbar-inner">
+                <i id="sidebar-toggle" class="fas fa-bars" @click="$emit('toggleSidebar')"></i>
                 <router-link to="/">
                     <span @mouseenter="logo = animatedLogo" @mouseleave="logo = staticLogo">
                         <img id="logo" :src="logo">
@@ -95,5 +96,11 @@
 
     #brand {
         margin-left: 40px;
+    }
+
+    #sidebar-toggle {
+        position: fixed;
+        left: 16px;
+        cursor: pointer;
     }
 </style>
