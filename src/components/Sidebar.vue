@@ -1,7 +1,7 @@
 <template>
     <div id="sidebar" :class="{open}">
         <div id="sidebar-inner">
-            ok
+            <router-link to="/games">Games</router-link>
         </div>
     </div>
 </template>
@@ -25,8 +25,10 @@
         border-right: 1px solid $primary;
         z-index: 9;
         transition: 0.25s;
+    }
 
-        &.open {
+    @media (min-width: 2 * $sidebar-width + $max-width + 32px) {
+        #sidebar.open {
             left: 0;
         }
     }
