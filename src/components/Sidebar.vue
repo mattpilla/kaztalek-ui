@@ -18,18 +18,20 @@
     #sidebar {
         position: fixed;
         top: $nav-height;
-        left: -$sidebar-width - 1px;
+        left: 0;
         width: $sidebar-width;
         height: 100%;
         background-color: $bg-secondary;
         border-right: 1px solid $primary;
         z-index: 9;
         transition: 0.25s;
-    }
 
-    @media (min-width: $sidebar-width + $max-width + 32px) {
-        #sidebar.open {
-            left: 0;
+        @media (max-width: $sidebar-width + $max-width + 32px) {
+            left: -$sidebar-width - 1px;
+
+            &.open {
+                left: 0;
+            }
         }
     }
 

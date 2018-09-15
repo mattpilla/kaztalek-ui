@@ -24,7 +24,7 @@
         data() {
             return {
                 ie: false,
-                sidebarOpen: true
+                sidebarOpen: false
             }
         },
         created() {
