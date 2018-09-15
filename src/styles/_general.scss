@@ -48,5 +48,5 @@ a {
 .container {
     padding: 16px;
     max-width: $max-width;
-    margin: auto;
+    @include content-align;
 }

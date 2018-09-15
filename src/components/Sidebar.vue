@@ -27,11 +27,11 @@
         transition: 0.25s;
     }
 
-    @media (min-width: 2 * $sidebar-width + $max-width + 32px) {
+    // @media (min-width: 2 * $sidebar-width + $max-width + 32px) {
         #sidebar.open {
             left: 0;
         }
-    }
+    // }
 
     #sidebar-inner {
         padding: 16px;

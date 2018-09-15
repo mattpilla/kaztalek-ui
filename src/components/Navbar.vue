@@ -65,12 +65,12 @@
     #navbar-inner {
         display: flex;
         align-items: center;
-        margin: auto;
         position: relative;
         font-family: 'Roboto Mono', monospace;
         padding: 0 16px;
         height: 50px;
         max-width: $max-width;
+        @include content-align;
 
         .nav-links {
             margin-left: auto;

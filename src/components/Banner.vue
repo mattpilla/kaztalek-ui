@@ -26,13 +26,14 @@
 
         > h1 {
             @include text-shadow;
-            position: absolute;
             line-height: 1;
             color: $primary;
-            bottom: 0;
+            padding: 16px;
             width: 100%;
             max-width: $max-width;
-            margin: auto;
+            @include content-align;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
     }
 </style>
