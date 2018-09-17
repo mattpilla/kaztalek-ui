@@ -88,19 +88,37 @@
         }
     }
 
-    #logo {
-        position: absolute;
-        left: 8px;
-        top: 8px;
-    }
-
-    #brand {
-        margin-left: 40px;
-    }
-
     #sidebar-toggle {
         position: fixed;
         left: 16px;
         cursor: pointer;
+
+        @media (min-width: $sidebar-width + $max-width + 32px + 1px) {
+            display: none;
+        }
+    }
+
+    $menu-width: 48px;
+    $logo-left: 8px;
+    $logo-width: 32px;
+
+    #logo {
+        position: absolute;
+        left: $logo-left;
+        top: 8px;
+    }
+
+    #brand {
+        margin-left: $logo-left + $logo-width;
+    }
+
+    @media (max-width: $max-width + $menu-width + 16px) {
+        #logo {
+            left: $logo-left + $menu-width - 16px;
+        }
+
+        #brand {
+            margin-left: $logo-left + $logo-width + $menu-width - 16px;
+        }
     }
 </style>
