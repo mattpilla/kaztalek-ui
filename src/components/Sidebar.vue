@@ -1,7 +1,11 @@
 <template>
     <div id="sidebar" :class="{open}" v-on-clickaway="closeSidebar">
         <div id="sidebar-inner">
+            <router-link to="/abc">A Button Challenge</router-link>
             <router-link to="/games">Games</router-link>
+            <hr>
+            <a :href="`${api}/WOP`">WOP</a>
+            <a :href="`${api}/get-down`">Get Down</a>
         </div>
     </div>
 </template>
@@ -12,6 +16,11 @@
     export default {
         mixins: [clickaway],
         props: ['open'],
+        data() {
+            return {
+                api: process.env.VUE_APP_API_URL
+            }
+        },
         methods: {
             closeSidebar(e) {
                 if (e.target.id !== 'sidebar-toggle') {
@@ -47,5 +56,9 @@
 
     #sidebar-inner {
         padding: 16px;
+
+        > a {
+            display: block;
+        }
     }
 </style>
