@@ -1,5 +1,5 @@
 <template>
-    <div id="sidebar" :class="{open}">
+    <div id="sidebar" :class="{open}" v-on-clickaway="closeSidebar">
         <div id="sidebar-inner">
             <router-link to="/games">Games</router-link>
         </div>
@@ -7,8 +7,18 @@
 </template>
 
 <script>
+    import { mixin as clickaway } from 'vue-clickaway';
+
     export default {
-        props: ['open']
+        mixins: [clickaway],
+        props: ['open'],
+        methods: {
+            closeSidebar(e) {
+                if (e.target.id !== 'sidebar-toggle') {
+                    this.$emit('close');
+                }
+            }
+        }
     }
 </script>
 
