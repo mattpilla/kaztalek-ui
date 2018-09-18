@@ -19,7 +19,7 @@
                     <a href="https://twitch.tv/kaztalek" target="_blank">
                         <i class="fab fa-twitch"></i>
                     </a>
-                    <a href="https://github.com/mattpilla" target="_blank">
+                    <a id="github-link" href="https://github.com/mattpilla" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
@@ -74,6 +74,7 @@
 
         .nav-links {
             margin-left: auto;
+            white-space: nowrap;
 
             i {
                 color: $text-light;
@@ -85,6 +86,12 @@
                     color: $secondary;
                 }
             }
+        }
+    }
+
+    @media (max-width: 380px) {
+        #github-link {
+            display: none;
         }
     }
 
